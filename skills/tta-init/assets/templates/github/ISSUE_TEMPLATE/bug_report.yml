@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a reproducible problem in the project
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Include the project version, commit, or deployment identifier.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: State the expected behavior and the actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Give the smallest reliable reproduction and relevant logs.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and self-check
+      description: Record OS, runtime, browser, configuration scope, and checks already performed.
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround or additional context

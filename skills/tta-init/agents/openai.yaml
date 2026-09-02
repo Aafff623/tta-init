@@ -1,0 +1,6 @@
+interface:
+  display_name: "TTA Init"
+  short_description: "Initialize a minimal AI-assisted project"
+  default_prompt: "Use $tta-init to initialize this project with the agreed TTA structure."
+policy:
+  allow_implicit_invocation: true
